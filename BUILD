@@ -1,0 +1,37 @@
+cc_library(
+  name='zlib',
+  srcs=[
+    'adler32.c',
+    'compress.c',
+    'crc32.c',
+    'gzclose.c',
+    'gzlib.c',
+    'gzread.c',
+    'gzwrite.c',
+    'uncompr.c',
+    'deflate.c',
+    'trees.c',
+    'zutil.c',
+    'inflate.c',
+    'infback.c',
+    'inftrees.c',
+    'inffast.c',
+    'crc32.h',
+    'gzguts.h',
+    'deflate.h',
+    'trees.h',
+    'zutil.h',
+    'inftrees.h',
+    'inflate.h',
+    'inffast.h',
+    'inffixed.h',
+  ],
+  hdrs=[
+    'zconf.h',
+    'zlib.h',
+  ],
+  deps=[
+  ],
+  visibility=['//visibility:public',],
+)
+
